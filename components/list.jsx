@@ -3,8 +3,9 @@ import Removebtn from "./Removebtn";
 import { HiPencilAlt } from "react-icons/hi";
 
 const getJobs = async () => {
+    const apiUrl = process.env.API_URL;
     try {
-        const res = await fetch(`https://crud-2-mongo.vercel.app/api/jobs`, {
+        const res = await fetch(`${apiUrl}/api/jobs`, {
             cache: "no-store",
         });
 
