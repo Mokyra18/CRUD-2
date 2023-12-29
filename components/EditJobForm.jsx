@@ -19,7 +19,7 @@ export default function EditJobForm({ id, title, company, description, type, loc
         e.preventDefault();
 
         try {
-            const res = await fetch(`http://localhost:3000/api/jobs/${id}`, {
+            const res = await fetch(`/api/jobs/${id}`, {
                 method:"PUT",
                 headers: {
                     "Content-type": "application/json",
