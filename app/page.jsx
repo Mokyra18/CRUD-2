@@ -1,10 +1,11 @@
 import List from "@/components/list"
 
 export default function Home() {
-  return (
-    <>
-      <List />
+  // return (
+  //   <>
+  //     <List />
 
-    </>
-  )
+  //   </>
+  // )
+  return <div>Hello</div>
 }
