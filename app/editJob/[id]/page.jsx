@@ -3,7 +3,7 @@ import EditJobForm from "@/components/EditJobForm";
 const getJobById = async (id) => {
     const apiUrl = process.env.API_URL;
     try {
-        const res = await fetch(`http://localhost:3000/api/jobs/${id}`, {
+        const res = await fetch(`${apiUrl}/api/jobs/${id}`, {
             cache:
                 'no-store'
         });
