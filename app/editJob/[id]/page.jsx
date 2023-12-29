@@ -1,8 +1,9 @@
 import EditJobForm from "@/components/EditJobForm";
 
 const getJobById = async (id) => {
+    const apiUrl = process.env.API_URL;
     try {
-        const res = await fetch(`https://crud-2-mongo.vercel.app/api/jobs/${id}`, {
+        const res = await fetch(`${apiUrl}/api/jobs/${id}`, {
             cache:
                 'no-store'
         });
