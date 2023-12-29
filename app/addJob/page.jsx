@@ -23,7 +23,7 @@ export default function AddJob() {
         }
 
         try {
-            const res = await fetch('https://crud-2-mongo.vercel.app/api/jobs', {
+            const res = await fetch('/api/jobs', {
                 method: "POST",
                 headers: {
                     "Content-type":"application/json"
