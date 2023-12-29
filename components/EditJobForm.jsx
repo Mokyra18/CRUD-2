@@ -19,7 +19,7 @@ export default function EditJobForm({ id, title, company, description, type, loc
         e.preventDefault();
 
         try {
-            const res = await fetch(`/api/jobs/${id}`, {
+            const res = await fetch(`https://crud-2-mongo.vercel.app/api/jobs/${id}`, {
                 method:"PUT",
                 headers: {
                     "Content-type": "application/json",
