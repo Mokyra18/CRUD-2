@@ -3,6 +3,7 @@ import Removebtn from "./Removebtn";
 import { HiPencilAlt } from "react-icons/hi";
 
 const getJobs = async () => {
+    // const apiUrl = process.env.API_URL;
     try {
         const res = await fetch(`http://localhost:3000/api/jobs`, {
             cache: "no-store",
@@ -19,8 +20,8 @@ const getJobs = async () => {
 
 
 export default async function List() {  
+    const { jobs } = await getJobs() || { jobs: [] };
 
-    const { jobs }  = await getJobs();
 
     return (
         <>

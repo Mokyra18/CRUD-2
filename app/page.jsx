@@ -7,5 +7,6 @@ export default function Home() {
 
   //   </>
   // )
-  return <div>Hello</div>
+  return <div>menu</div>
+
 }
